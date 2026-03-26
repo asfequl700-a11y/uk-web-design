@@ -1,0 +1,24 @@
+import React from 'react';
+import UnifiedForm from './UnifiedForm';
+
+export default function ContactForm() {
+  return (
+    <section className="bg-surface py-24">
+      <div className="max-w-[1280px] mx-auto px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          <div className="lg:col-span-5 space-y-4">
+            <h2 className="font-serif text-4xl md:text-[2.5rem] leading-tight text-primary break-words">Start your project today.</h2>
+            <p className="font-body text-on-surface-variant max-w-sm leading-relaxed">
+              Receive a complimentary audit of your current digital presence and a bespoke quote for your trade.
+            </p>
+          </div>
+          <div className="lg:col-span-7">
+            <div className="bg-white/40 backdrop-blur-sm p-12 md:p-16 rounded-xl border border-outline-variant/30 shadow-[0_4px_20px_-10px_rgba(51,68,37,0.1)] transition-all duration-700 hover:bg-white/80 hover:shadow-2xl">
+              <UnifiedForm />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,26 +1,151 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-surface-variant: #e5e2d8;
+  --color-on-secondary: #ffffff;
+  --color-outline-variant: #c5c8bc;
+  --color-inverse-on-surface: #f4f1e6;
+  --color-on-primary-fixed: #101f05;
+  --color-primary: #334425;
+  --color-background: #fcf9ee;
+  --color-on-tertiary-fixed: #201b0c;
+  --color-primary-container: #4a5c3a;
+  --color-on-primary: #ffffff;
+  --color-on-surface: #1c1c15;
+  --color-primary-fixed-dim: #b8cda3;
+  --color-on-tertiary-fixed-variant: #4c4634;
+  --color-on-surface-variant: #44483f;
+  --color-on-tertiary-container: #d5ccb4;
+  --color-on-tertiary: #ffffff;
+  --color-surface-bright: #fcf9ee;
+  --color-secondary-fixed-dim: #b8cdaa;
+  --color-error: #ba1a1a;
+  --color-surface-container-highest: #e5e2d8;
+  --color-on-secondary-fixed: #0f1f09;
+  --color-secondary: #516447;
+  --color-tertiary-fixed-dim: #cfc6ae;
+  --color-outline: #75786e;
+  --color-tertiary-container: #5d5643;
+  --color-error-container: #ffdad6;
+  --color-secondary-container: #d1e6c2;
+  --color-secondary-fixed: #d4e9c5;
+  --color-surface-container-low: #f7f4e9;
+  --color-on-secondary-fixed-variant: #3a4c31;
+  --color-surface-tint: #526441;
+  --color-on-primary-container: #bed3a9;
+  --color-on-secondary-container: #55684b;
+  --color-on-error-container: #93000a;
+  --color-inverse-primary: #b8cda3;
+  --color-on-error: #ffffff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-dim: #dddacf;
+  --color-on-background: #1c1c15;
+  --color-surface-container-high: #ebe8dd;
+  --color-inverse-surface: #31312a;
+  --color-tertiary-fixed: #ece2c9;
+  --color-primary-fixed: #d4eabd;
+  --color-on-primary-fixed-variant: #3a4c2b;
+  --color-surface-container: #f1eee3;
+  --color-surface: #fcf9ee;
+  --color-tertiary: #453f2d;
+
+  --font-headline: "Noto Serif", serif;
+  --font-serif: "Playfair Display", serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-sans: "DM Sans", sans-serif;
+  --font-label: "DM Sans", sans-serif;
+
+  --radius-DEFAULT: 1rem;
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body selection:bg-primary-container selection:text-white;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* ── Scrollbar ── */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F2EFE4;
+    border-left: 1px solid #B8AF98;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #B8AF98;
+    border-radius: 100px;
+    transition: background 0.3s ease;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8A9E7E;
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    background: #4A5C3A;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: #F2EFE4;
+  }
+
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #B8AF98 #F2EFE4;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .marquee-scroll-infinite {
+    display: flex;
+    width: max-content;
+    animation: marquee 30s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .luxury-bezier {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+.pause-on-hover:hover {
+  animation-play-state: paused;
+}
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .material-symbols-outlined {
+    vertical-align: middle;
+    word-break: normal;
+    white-space: nowrap;
+    overflow-wrap: normal;
+    font-feature-settings: "liga";
+  }
 }
