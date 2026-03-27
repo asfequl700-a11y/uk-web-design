@@ -8,13 +8,13 @@ export default function Navbar() {
 
   const tickerItems = [
     "Websites Built for Britain's Tradespeople.",
-    "CRAFTLINE",
+    "UK WEB DESIGN",
     "Limited Availability for Q4 Projects",
-    "CRAFTLINE",
+    "UK WEB DESIGN",
     "Websites Built for Britain's Tradespeople.",
-    "CRAFTLINE",
+    "UK WEB DESIGN",
     "Limited Availability for Q4 Projects",
-    "CRAFTLINE",
+    "UK WEB DESIGN",
   ];
 
   const navLinks = [
@@ -39,7 +39,7 @@ export default function Navbar() {
             <div key={group} className="flex items-center gap-12 pr-12">
               {tickerItems.map((item, i) => (
                 <div key={`${group}-${i}`} className="flex items-center gap-12">
-                  {item === "CRAFTLINE" ? (
+                  {item === "UK WEB DESIGN" ? (
                     <div className="flex items-center gap-2">
                       <svg 
                         className="w-5 h-5 text-background" 
@@ -54,7 +54,7 @@ export default function Navbar() {
                         <path d="M250 210V450L330 370L250 210Z" fill="#6B8E6F" />
                         <path d="M250 210L170 370L250 450V210Z" fill="#7FA684" />
                       </svg>
-                      <span className="font-serif text-lg italic text-background tracking-tight">{item}</span>
+                      <span className="font-serif text-lg italic text-background tracking-tight">UK WEB DESIGN</span>
                     </div>
                   ) : (
                     <span className="font-sans text-[0.625rem] uppercase tracking-[0.12rem] text-background/90">{item}</span>
@@ -89,8 +89,8 @@ export default function Navbar() {
                 fill="#7FA684" 
               />
             </svg>
-            <span className="font-serif text-2xl font-bold tracking-tight transition-colors text-primary dark:text-background">
-              CRAFTLINE
+            <span className="font-serif text-[1rem] md:text-[1.2rem] font-bold tracking-tight transition-colors text-primary dark:text-background leading-[0.9] select-none">
+              UK WEB<br />DESIGN
             </span>
           </Link>
 

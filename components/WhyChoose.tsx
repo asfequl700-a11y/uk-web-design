@@ -23,7 +23,7 @@ export default function WhyChoose() {
     <section className="bg-surface-container py-24 md:py-32">
       <div className="max-w-[1280px] mx-auto px-8">
         <div className="mb-20 text-center">
-          <span className="font-sans text-[0.6875rem] uppercase tracking-[0.1rem] text-secondary font-bold block mb-4">The Craftline Difference</span>
+          <span className="font-sans text-[0.6875rem] uppercase tracking-[0.1rem] text-secondary font-bold block mb-4">The UK WEB DESIGN Difference</span>
           <h2 className="font-serif text-4xl md:text-[2.5rem] text-primary break-words">Why trade experts choose us.</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16">

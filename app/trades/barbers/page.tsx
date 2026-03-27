@@ -156,7 +156,7 @@ export default function BarbersPage() {
             <div className="bg-primary text-on-primary rounded-lg p-16 md:p-24 relative overflow-hidden">
               <span className="material-symbols-outlined text-9xl absolute -top-10 -left-10 text-white/5 rotate-12">format_quote</span>
               <div className="relative z-10 max-w-3xl">
-                <h2 className="font-serif text-[2rem] leading-snug mb-10 italic">&quot;My website from Craftline is now the primary source of my bookings. It gives my clients the same premium feeling they get when they walk through the door.&quot;</h2>
+                <h2 className="font-serif text-[2rem] leading-snug mb-10 italic">&quot;My website from UK WEB DESIGN is now the primary source of my bookings. It gives my clients the same premium feeling they get when they walk through the door.&quot;</h2>
                 <div className="flex items-center gap-6">
                   <div className="w-16 h-16 rounded-full bg-primary-container overflow-hidden">
                     <img alt="Marcus Reid" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuX8UWTic1jmED-NZCz_J688zKqnKESosfafpxXYqYfJdJulDuOlrLAGn8RgFAK-nHodP8QYEPZ0jsWmANygDj-8zpizmnB1Sczd-LEiw2ODypGLEe2EbP7Aa6xTwbubGl3oznhQzbK7CEHWPZkWPuKHwwYmhQYrZCEBfnEfwr_kmz9hRuJGE4jE4dAJPYoTQ9dqYg8d6TeZxNrwIt4oHFEQnSnIhYpiLjANRLVW7Q4rtWL68paQ5xX4PnMk51f4zP3Y05KfPBew" />

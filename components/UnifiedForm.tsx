@@ -130,7 +130,7 @@ export default function UnifiedForm({ tradeSector, variant = 'light' }: UnifiedF
 
         {/* Row 4: Checkbox & Submit */}
         <div className="pt-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 md:gap-8">
-          <div className="flex items-center gap-3 cursor-pointer group" onClick={() => document.getElementById('uf-terms')?.click()}>
+          <label className="flex items-center gap-3 cursor-pointer group" htmlFor="uf-terms">
             <div className="relative w-6 h-6 flex-shrink-0">
               <input
                 className={`peer appearance-none w-6 h-6 rounded-md border-2 transition-all duration-300 cursor-pointer outline-none ${isDark ? 'border-background/30 checked:bg-background' : 'border-outline-variant checked:bg-primary checked:border-primary'}`}
@@ -146,10 +146,10 @@ export default function UnifiedForm({ tradeSector, variant = 'light' }: UnifiedF
                 <path d="M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z" fill={isDark ? '#334425' : 'white'} />
               </svg>
             </div>
-            <label className={`font-sans text-[10px] md:text-xs uppercase tracking-[0.1rem] cursor-pointer ${isDark ? 'text-background/60' : 'text-on-surface-variant'}`} htmlFor="uf-terms">
+            <span className={`font-sans text-[10px] md:text-xs uppercase tracking-[0.1rem] ${isDark ? 'text-background/60' : 'text-on-surface-variant'}`}>
               I agree to the privacy policy
-            </label>
-          </div>
+            </span>
+          </label>
 
           <button
             className={`w-full sm:w-auto rounded-full px-[35px] py-4 md:py-6 font-sans text-xs md:text-sm font-bold uppercase tracking-[0.2rem] transition-all duration-500 shadow-xl active:scale-95 ${isDark ? 'bg-background text-primary' : 'bg-primary text-on-primary'

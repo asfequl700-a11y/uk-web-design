@@ -2,7 +2,7 @@ import React from 'react';
 
 const testimonials = [
   {
-    quote: '"Craftline understood that a carpenter\'s website shouldn\'t look like a silicon valley startup. They captured the soul of my workshop perfectly."',
+    quote: '"UK WEB DESIGN understood that a carpenter\'s website shouldn\'t look like a silicon valley startup. They captured the soul of my workshop perfectly."',
     name: 'James Arkwright',
     company: 'Arkwright Custom Timber',
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA7Wdnkd5ylFaHVUZr7aTLyzC1v0GJB8jZtmtmV0VSiEFkswWHSyKThYrsUMO3M-M-1x_-nU-xfMs_VvSjAsWPjZOsHXskSF0L5NhxnQzSXrmbvAZkduVM49O9P4Qq_XhAZiRLD_7PtFZnBGagG_6xdI_muLPvIl5zaAX-_PmZE3ULFbXgkyyAjLCUgnsSzps28_1_Nm89KsFoeYFlQG49cnELA1cNJTeU4dKcZiKPnMm7JsWRbFTyAyNsWybaOFQC17zzjZrXV-g',

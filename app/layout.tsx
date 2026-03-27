@@ -18,7 +18,7 @@ const notoSerif = Noto_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Craftline | Websites Built for Britain's Tradespeople",
+  title: "UK WEB DESIGN | Websites Built for Britain's Tradespeople",
   description: "High-end editorial design with the grit of British craftsmanship for trade businesses.",
 };
 
